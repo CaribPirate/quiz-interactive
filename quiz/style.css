@@ -1,0 +1,171 @@
+body {
+  background-color: blanchedalmond;
+  background: url("media/brain1.png") no-repeat center fixed;
+  background-size: cover;
+  margin: 70px;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  font-size: 48px;
+}
+
+h2 {
+  color: navy;
+  font-family: 'Raleway', sans-serif;
+  font-variant: small-caps;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,
+ul,
+input,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+button {
+  display: inline-block;
+
+  font: normal normal 300 1.3em 'Open Sans';
+  text-decoration: none;
+
+  color: steelblue;
+  background-color: transparent;
+  border: 1px solid steelblue;
+  border-radius: 20px;
+
+  padding: .3em 1.2em;
+  margin: 5px;
+
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, steelblue 50%);
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: steelblue;
+  background-position: -100% 100%;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 150px 100px;
+  width: 600px;
+  margin: auto;
+  border-radius: 50px;
+}
+
+#question-1,
+#question-2,
+#question-3,
+#question-4,
+#question-5 {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.iqtext {
+  font-variant: small-caps;
+  color: navy;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  width: 180px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-style: italic
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2b496b;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+}

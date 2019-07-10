@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What's your IQ?</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class='main'>
+    <h1>THE IQ ANALYZER</h1>
+    <hr>
+    <div id='question-1'>
+      <h2>Question 1</h2>
+      <p>What city is shown below?(<a href="https://en.wikipedia.org/wiki/Russia" target="_blank">HINT</a>)
+      </p>
+      <img src="media/moscow.jpg" alt="Capital of Russia" width="400px">
+      <p class="italic">Answer: <input id='moscow' type="text"></p>
+      <h4 id='status1'></h4>
+    </div>
+
+    <hr>
+
+    <div id='question-2'>
+      <h2>Question 2</h2>
+      <p>Which of the following is <strong>not</strong> a real company?</p>
+      <label class='container'>
+        <input type='radio' name='mc' checked='checked'>Uni Style Image
+        <span class="checkmark"></span>
+      </label>
+      <label class='container'>
+        <input type='radio' name='mc'>Nordstrom Rack
+        <span class="checkmark"></span>
+      </label>
+      <label class='container'>
+        <input id='umbrella' type='radio' name='mc'>Umbrella Corporation
+        <span class="checkmark"></span>
+      </label>
+      <label class='container'>
+        <input type='radio' name='mc'>Treyarch
+        <span class="checkmark"></span>
+      </label>
+      <label class='container'>
+        <input type='radio' name='mc'>Sonos
+        <span class="checkmark"></span>
+      </label>
+      <h4 id='status2'></h4>
+    </div>
+    <hr>
+
+    <div id='question-3'>
+      <h2>Question 3</h2>
+      <p>What sound is this?</p>
+      <img src="media/sound.jpg" alt="Sound" width="300px">
+      <p>
+        <audio controls>
+          <source src="media/winxp.mp3" type="audio/mpeg">
+        </audio>
+      </p>
+      <p class="italic">Answer: <input id='windows-xp' type="text"></p>
+      <h4 id='status3'></h4>
+    </div>
+    <hr>
+
+    <div id='question-4'>
+      <h2>Question 4</h2>
+      <p>Who is this man?</p>
+      <img src="media/notch.jpg" alt="Founder of Minecraft" width="400px">
+      <p class="italic">Answer: <input id='notch' type="text"></p>
+      <h4 id='status4'></h4>
+    </div>
+    <hr>
+
+    <div id='question-5'>
+      <h2>Question 5</h2>
+      <p><em>What word in the English language does the following: the first two letters signify a male, the first three
+          letters signify a female, the first four letters signify a great, while the entire world signifies a great
+          woman.</em></p>
+      <p>What word is this?</p>
+      <p class="italic">Answer: <input id='heroine' type="text"></p>
+      <h4 id='status5'></h4>
+    </div>
+    <hr>
+
+    <h2>Results</h2>
+    <p><button id='mark-quiz' type="button">Mark Quiz</button> <button id='reset'>Reset</button></p>
+    <p> You got <span id='mark'>_</span>/5 (<span id='percent'>__</span>%).</p>
+    <p id=feedback></p>
+    <p>Now go brag about your <span class='iqtext'>IQ</span>, or be bullied because of it. :)</p>
+  </div>
+  <!-- load js -->
+  <script src='main.js'></script>
+</body>
+
+</html>
